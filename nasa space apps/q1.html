@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 id="heading">Question 1</h1>
+        <div class="question">
+            <p id="q">Who among the following is not part of Project Apollo?</p>
+        </div>
+        <div class="options">
+            <input type="radio" name="answer" value="Buzz Aldrin" id="option1">
+            <label for="option1">a&#10091; Buzz Aldrin</label><br><br>
+            <input type="radio" name="answer" value="Yuri Gagarin" id="option2">
+            <label for="option2">b&#10091; Yuri Gagarin</label><br><br>
+            <input type="radio" name="answer" value="Michael Collins" id="option3">
+            <label for="option3">c&#10091; Michael Collins</label><br><br>
+            <input type="radio" name="answer" value="Neil Armstrong" id="option4">
+            <label for="option4">d&#10091; Neil Armstrong</label><br>
+        </div>
+        <button id="check-answer" style="margin-top: 60px;">Check Answer</button>
+        <p id="result"></p>
+        <button id="NEXT" style="margin-left:700px; "><a href="q2.html">NEXT</a></button>
+        <p id="score" style="position: absolute;top:50px; color: white;"></p>
+    </div>
+    <script src="main1.js"></script>
+    <!-- <script src="main1.js"></script>
+    <script>
+      var x=0;
+      a=['Question 2','Question 3','Question 4','Question 5','Question 6','Question 7','Question 8','Question 9','Question 10']
+      b=["Which of the following was the first artificial satellite?","Which of the following planets is also called 'The Diamond' plant?","Which of the following launched vehicle was used for the Project Apollo?"]
+      c=['Sputnik',]
+      i=0;
+      document.getElementById('check-answer').addEventListener('click', function() {
+  const selectedOption = document.querySelector('input[name="answer"]:checked');
+  const result = document.getElementById('result');
+  
+
+  if (selectedOption) {
+      const userAnswer = selectedOption.value;
+      if (userAnswer === '') {
+          result.textContent = 'Correct!';
+          result.style.fontSize = '25px';
+          result.style.color = 'white';
+      } else {
+          result.textContent = 'Sorry, that\'s incorrect. The correct answer is Yuri Gagarin.';
+          result.style.color = 'white';
+          result.style.fontSize = '25px';
+      }
+  } else {
+      alert('Please select an answer.');
+  }
+})
+      
+      document.getElementById('NEXT').addEventListener('click',()=>{
+        if(document.querySelector('input[name="answer"]:checked'))
+        x=1;
+        else
+        x=0;
+      // if(x)
+      // {
+      //   i++;
+      //   document.getElementById('heading').innerHTML=a[i];
+      //   document.getElementById('q').innerHTML=b[i];
+      // }
+      else
+      alert('Please select an answer.');
+      });
+    </script> -->
+</body>
+</html>
