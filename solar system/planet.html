@@ -1,37 +1,4 @@
 <!DOCTYPE html>
-<!-- <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="planet.css">
-</head>
-<body>
-    <H1>PLANETS</H1>
-    <div class="main">
-        <a href="sun.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px"></a>
-        <p>Sun</p>
-        <a href="moon.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px"></a>
-        <p>Moon</p>
-        <a href="mercury.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" size=""></a>
-        <p>Mercury</p>
-        <a href="venus.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Venus</p>
-        <a href="Earth.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Earth</p>
-        <a href="mars.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Mars</p>
-        <a href="jupiter.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Jupiter</p>
-        <a href="Saturn.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Saturn</p>
-        <a href="uranus.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Uranus</p>
-        <a href="neptune.html"><img src="tink-029adb3-e1588252892217.png" width="50px" height="50px" > </a>
-        <p>Neptune</p>
-    </div>
-</body>
-</html> -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -44,27 +11,42 @@
     />
     <link rel="stylesheet" href="planet.css" />
     <style>
-      .attractive-button {
-        background-color: #093d65; /* Green background color */
-        border: none; /* Remove button border */
-        color: white; /* Text color */
-        padding: 12px 24px; /* Padding for text inside the button */
-        text-align: center; /* Center text horizontally */
-        text-decoration: none; /* Remove underlines from links */
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px 4px; /* Add some margin to the button */
-        cursor: pointer; /* Change cursor on hover */
-        border-radius: 8px; /* Rounded corners */
-        transition: background-color 0.3s ease; /* Smooth background color transition */
-
-        /* Add a shadow effect */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .attractive-button:hover {
-        background-color: #050334; /* Darker green on hover */
-      }
+      .space-button {
+          display: inline-block;
+          padding: 15px 30px;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          text-transform: uppercase;
+          border: 2px solid #0074E4; /* Border color */
+          background-color: #1F1F1F; /* Button background color */
+          color: #FFFFFF; /* Button text color */
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        
+        /* Hover effect */
+        .space-button:hover {
+          background-color: #0074E4; /* Hover background color */
+          color: #FFFFFF; /* Hover text color */
+          border-color: #0056A7; /* Hover border color */
+        }
+        
+        /* Optional: Add a space-themed icon or image to the button */
+        .space-button::before {
+          font-family: "Font Awesome 5 Free"; /* If using an icon font */
+          margin-right: 10px; /* Adjust spacing between icon and text */
+        }
+        
+        /* Optional: Add more space-related styles */
+        .space-button::after {
+          content: "HOME";
+          font-size: 14px;
+          margin-left: 0px; /* Adjust spacing between text and icon */
+    
+        }
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
     </style>
   </head>
   <body>
@@ -72,7 +54,7 @@
     <header>
       <div class="container">
         <div class="row">
-          <a href="/index.html"><img style="width: 200px; padding-left:50%;" src="/space_img/home.png" alt=""></a>
+          <a href="../index.html"><button class="space-button" style="margin-left:50%"></button></a>
         </div>
       </div>
     </header>
@@ -81,7 +63,7 @@
       style="display: flex; flex-direction: row; align-items: center"
     >
       <div class="sun">
-        <a href="/facts/sun.html" title="sun"
+        <a href="../facts/sun.html" title="sun"
           ><img
             src="sun.png"
             style="
@@ -96,7 +78,7 @@
       </div>
       <!-- <p>Sun</p> -->
 
-      <a href="./facts/mercury1.html"
+      <a href="../facts/mercury1.html"
         ><img
           src="mercury-removebg-preview.png"
           style="
@@ -110,7 +92,7 @@
       /></a>
       <!-- <p>Mercury</p> -->
 
-      <a href="./facts/venus.html"
+      <a href="../facts/venus.html"
         ><img
           src="venus-removebg-preview.png"
           style="
@@ -122,7 +104,7 @@
             margin-top: 250px;
           "
       /></a>
-      <a href="./facts/earth.html"
+      <a href="../facts/earth.html"
         ><img
           src="earth.png"
           style="
@@ -134,7 +116,7 @@
             margin-top: 250px;
           "
       /></a>
-      <a href="./facts/moon.html" class="moon"
+      <a href="../facts/moon.html" class="moon"
         ><img
           src="moon-removebg-preview.png"
           style="
@@ -149,7 +131,7 @@
 
       <!-- <-->
       <!-- <p>Earth</p> -->
-      <a href="./facts/mars.html"
+      <a href="../facts/mars.html"
         ><img
           src="mars-removebg-preview.png"
           style="
@@ -163,7 +145,7 @@
       /></a>
 
       <!-- <p>Mars</p> -->
-      <a href="./facts/jupiter.html"
+      <a href="../facts/jupiter.html"
         ><img
           src="jupiter-removebg-preview.png"
           style="
@@ -177,7 +159,7 @@
       /></a>
 
       <!-- <p>Jupiter</p> -->
-      <a href="./facts/saturn.html"
+      <a href="../facts/saturn.html"
         ><img
           src="saturn-removebg-preview.png"
           style="
@@ -191,7 +173,7 @@
       /></a>
 
       <!-- <p>Saturn</p> -->
-      <a href="./facts/uranus.html"
+      <a href="../facts/uranus.html"
         ><img
           src="uranuus-removebg-preview.png"
           style="
@@ -205,7 +187,7 @@
       /></a>
 
       <!-- <p>Uranus</p> -->
-      <a href="./facts/neptune.html"
+      <a href="../facts/neptune.html"
         ><img
           src="neptune-removebg-preview.png"
           style="

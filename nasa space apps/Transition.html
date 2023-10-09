@@ -55,34 +55,48 @@
   transform: scale(1.1);
 }
 
+.space-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid #0074E4; /* Border color */
+      background-color: #1F1F1F; /* Button background color */
+      color: #FFFFFF; /* Button text color */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    /* Hover effect */
+.space-button:hover {
+      background-color: #0074E4; /* Hover background color */
+      color: #FFFFFF; /* Hover text color */
+      border-color: #0056A7; /* Hover border color */
+    }
+    
+    /* Optional: Add a space-themed icon or image to the button */
+.space-button::before {
+      font-family: "Font Awesome 5 Free"; /* If using an icon font */
+      margin-right: 10px; /* Adjust spacing between icon and text */
+    }
+    
+    /* Optional: Add more space-related styles */
+.space-button::after {
+      content: "HOME";
+      font-size: 14px;
+      margin-left: 0px; /* Adjust spacing between text and icon */
 
-.attractive-button{
-  background-color: #093d65; /* Green background color */
-  border: none; /* Remove button border */
-  color: white; /* Text color */
-  padding: 12px 24px; /* Padding for text inside the button */
-  text-align: center; /* Center text horizontally */
-  text-decoration: none; /* Remove underlines from links */
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 4px; /* Add some margin to the button */
-  cursor: pointer; /* Change cursor on hover */
-  border-radius: 8px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-
-  /* Add a shadow effect */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.attractive-button:hover {
-  background-color: #050334; /* Darker green on hover */
-}
+    }
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
   </style>
 </head>
 <header>
   <div class="container">
     <div class="row">
-      <a href="./index.html"><img style="width: 200px;" src="/space_img/home.png" alt=""></a>
+      <a href="../index.html"><button class="space-button"></button></a>
     </div>
   </div>
 </header>
